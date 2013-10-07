@@ -1,0 +1,583 @@
+/*========================================================
+        [3] Masterpage & Page Layout        __layout
+  ========================================================*/
+
+/* ---- Page Layout styles ---- */
+/*Opera Fix*/
+  body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;
+}
+
+.ow_bg_color{
+  background-color: #fff;
+}
+
+.ow_page_wrap { 
+  position: relative;
+  background-image: url('images/bg.jpg'); /** OW_Control type:image, key:backgroundImage, section: 1. General Settings, label: Page background image **/
+  background-repeat: repeat;    
+}
+body > .ow_page_wrap {
+  min-height: 100%;
+}
+.ow_page_padding {
+  /*overflow: auto;*/
+  padding-bottom: 99px;
+} 
+
+.ow_canvas {
+  margin: 0 auto;
+  width: 1000px;
+  word-wrap: break-word;
+}
+
+.ow_page {
+    margin: 0 185px 0px auto;
+    padding: 0 18px;
+}
+
+.ow_page_container {
+  width: 1000px;
+  margin: 0px auto 16px;  
+}
+
+.ow_page_container .ow_page {
+    padding: 28px 16px 16px;
+    min-height: 400px;
+  color: #333;/** OW_Control type:color, section:2. Colors, key:textColor, label: - Text **/
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -moz-border-bottom-left-radius: 6px;
+    -moz-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+}
+.ow_content {
+  float: left;
+  width: 100%;
+}
+
+.ow_content a {
+  color: #2a80ae; /** OW_Control type:color, key:linkColor, section:2. Colors, label: - Links **/
+}
+
+.ow_sidebar {
+  margin-right: -201px;
+    float: right;
+    width: 168px;
+}
+
+.ow_footer {
+    color: #aaa;
+    padding:1px 0px;
+  border-top: 1px solid #d4d4d4;
+  background: #f5f5f5; /** OW_Control type:color, section:1. General Settings, key:footerColor, label:Footer background **/ 
+  height: 96px;
+  position: relative;
+  margin-top: -99px;
+  clear: both;
+}
+
+
+.ow_footer .ow_copyright{
+  float: left;
+  font-size:11px;
+  line-height: 1;
+}
+
+h1.page_title{
+    background: url(images/ic_file.png) no-repeat left 50%;
+    margin-bottom: 20px;
+    padding-left: 22px;
+}
+
+.ow_column {
+  width: 49%;
+    overflow: hidden; 
+}
+
+.ow_narrow {
+    width: 39%;
+    overflow: hidden;
+}
+
+.ow_wide {
+    width: 59%;
+    overflow: hidden;    
+}
+
+.ow_superwide {
+    width: 75%;
+    overflow: hidden;   
+}
+
+.ow_supernarrow {
+    width: 23%;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.ow_left {
+    float: left;
+}
+
+td.ow_left {
+  float: none;
+}
+
+.ow_right {
+    float: right;
+}
+
+.ow_center {
+    text-align: center;
+}
+
+.ow_vertical_middle {
+  vertical-align: middle;
+}
+
+.ow_txtleft,
+table td.ow_txtleft {
+    text-align: left;
+}
+
+.ow_txtcenter {
+    text-align: center;
+}
+
+.ow_txtright {
+    text-align: right;
+}
+
+html body .ow_hidden{
+    display: none;
+}
+
+.ow_visible {
+    display: block;
+}
+
+.ow_nocontent {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+table.ow_nomargin,
+div.ow_nomargin {
+    margin-bottom:0px;
+}
+
+.ow_nowrap {
+    white-space: nowrap;
+}
+
+ul.ow_regular {
+  margin-bottom: 12px;
+}
+
+ul.ow_regular li {
+  line-height: 17px;
+  margin: 0 0 3px 0px;
+  padding: 0px 0px 0px 16px;
+  background-repeat: no-repeat;
+  background-image: url(images/miniic_li.png);
+  background-position: left 5px;
+}
+
+.ow_preloader{
+    background: url(images/ajax_preloader_button.gif) no-repeat center center;
+}
+
+.ow_preloader_content{
+    background: url(images/ajax_preloader_content.gif) no-repeat center center;
+}
+
+.ow_page_layout_scheme {
+    width: 580px;
+}
+
+.ow_page_layout_scheme a {
+  background-position: center center;
+  background-repeat: no-repeat;
+    border: 1px solid #FFFFFF;
+    display: block;
+  float: left;
+  height: 103px;
+    margin: 2px;
+    padding: 5px;
+    width: 100px;
+}
+
+.ow_page_layout_scheme a.active,
+.ow_page_layout_scheme a:hover {
+    background-color: #CCFFCC;
+    border: 1px solid #CCCCCC;
+}
+
+.ow_item_set2{ width: 49%; }
+.ow_item_set3{ width: 33%; }
+.ow_item_set4{ width: 25%; }
+.ow_item_set5{ width: 20%; }
+/* ---- End of Page Layout styles ---- */
+
+/* ---- Header styles ---- */
+.ow_header {
+   /* background-image:  url('images/top_bg.jpg');/** OW_Control type:image, key:headerImage, section:1. General Settings, label: Page header image **/
+  /*  background-color: #fefefe;
+    background-repeat: repeat-x;
+    background-position: bottom left; */
+    width: 815px;
+    padding: 0px 185px 0px 0px;
+    margin: 24px auto 0px;
+}
+.ow_top {
+    position: relative;
+    height: auto;
+  min-height: 105px;
+  padding-top: 50px;
+}
+.ow_logo_wrap {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 12px 0px 0px 10px;
+}
+.ow_logo_wrap a {
+  font-family: 'UbuntuBold', "Trebuchet MS", "Helvetica CY", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #626060;
+}
+.ow_logo_wrap a:hover {
+  text-decoration: none;
+}
+
+.ow_header .ow_search{
+    float: right;
+    padding: 5px;
+}
+
+.ow_header_pic {
+  height: 209px;
+  background-image: url('images/header_s.jpg');/** OW_Control type:image, key:headerImage, section:1. General Settings, label: Page header image **/
+  background-repeat: no-repeat;
+}
+/* ---- End of the Header styles ---- */
+
+/* ---- Sidebar styles ---- */
+.ow_sidebar .ow_box_cap_empty {
+  border-color: #d8d8d8;
+}
+.ow_sidebar .ow_box_cap {
+  border-color: #d8d8d8;
+  border-bottom: 0px;
+}
+.ow_sidebar .ow_box {
+  border-color: #d8d8d8;
+}
+html body .ow_sidebar h3 {
+  font-size: 13px;
+}
+/* ---- End of Sidebar styles ---- */
+
+
+/* ---- Console styles ---- */
+.ow_console .wackwall_link{
+    background: url(images/console-w.png) no-repeat 50% 50%;
+    display: block;
+    height: 30px;
+    width: 35px;
+}
+
+.ow_console .wackwall_link:hover{
+    text-decoration:none;
+}
+.ow_console .common_shortcuts a{
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    display:inline-block;
+    height:30px;
+    width:25px;
+}
+.ow_console .common_shortcuts a:hover{
+    text-decoration:none;
+}
+.ow_console .notification_shortcut{
+    padding:0 7px;
+}
+.ow_console .notification_shortcut a{
+    background-position:0 50%;
+    background-repeat:no-repeat;
+    display:block;
+    padding: 5px 0 5px 20px;
+    text-decoration:none;
+}
+.ow_site_panel {
+  height: 41px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #e5e5e5;
+}
+.ow_console {
+  font-size: 11px;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+    z-index: 99;
+    color: #666;
+}
+.ow_console_body {
+  padding: 8px 4px 8px 8px;
+  background: #f4f4f4;
+  text-align: right;
+  border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-bottom-left-border-radius: 2px;
+}
+.ow_console_block {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.ow_console_item {
+  background: #fefefe url(images/console_item_bg.png) repeat-x 0px 0px;
+  display: inline-block;
+    position:relative;
+  line-height: 21px;
+    height:22px;
+    margin:0 4px 0 0px;
+    padding:0 8px;
+    border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  text-align: left;
+}
+.ow_console_item:hover {
+  border-color: #999;
+  cursor: pointer;
+}
+.ow_console_dropdown_hover:hover {
+  background: #efefef url(images/console_active_item_bg.png) repeat-x 0px 0px;
+  border-color: #ccc;
+  cursor: pointer;  
+}
+.ow_console_dropdown_pressed {
+  background: #efefef url(images/console_active_item_bg.png) repeat-x 0px 0px;
+  border-color: #ccc; 
+}
+.ow_console_item a {
+  color: #666;
+}
+.ow_console_item a:hover {
+  text-decoration: none;
+}
+.ow_console_more {
+    background: url("images/console_arr.png") no-repeat scroll right 9px transparent;
+    display: inline-block;
+    height: 22px;
+    min-width: 8px;
+    padding: 0 0px 0 3px;
+    vertical-align: top;
+}
+.ow_console_item:hover .ow_console_more {
+    background: url("images/console_arr_hover.png") no-repeat scroll right 9px transparent;
+}
+/* ---- Console select language styles ---- */
+.ow_console_lang_item {
+  text-transform: uppercase;
+}
+li.ow_console_lang_item {
+  padding: 3px 8px;
+  border: 1px solid transparent;
+    border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin-bottom: 1px;
+}
+li.ow_console_lang_item:hover {
+  border: 1px solid #ccc;
+  background: #fff url(images/console_item_bg.png) repeat-x center 0px;
+}
+.ow_console_lang_item span {
+  display: inline-block;
+  padding-left: 23px;
+}
+/* ---- End Console select language styles ---- */
+
+.ow_console .ow_tooltip_top_right {
+  top: 10px;
+  padding-top: 2px;
+}
+.ow_console .ow_tooltip_top_right .ow_tooltip_tail span {
+  background-position: 1px -6px;
+}
+.ow_console span.ow_count_wrap {
+  padding: 4px 0px 0px;
+  margin: 0px -3px 0px 2px;
+}
+.ow_console span.ow_count_bg {
+}
+.ow_console span.ow_count {
+  position: relative;
+  top: 0px;
+  line-height: 13px;
+}
+.ow_console .ow_tooltip_body {
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+ }
+ .ow_console_list_wrapper {
+  width: 330px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 60px;
+}
+.ow_console_list {
+  cursor: default;
+}
+.ow_console_list li {
+  padding: 3px;
+  margin: 0px 0px 4px;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #ececec;
+    border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.ow_console_list li:hover {
+  border-color: #ccc;
+}
+.ow_console_list li.ow_console_new_message {
+  background: #fff;
+  border-color: #ccc;
+}
+.ow_console_list li:last-child {
+  margin-bottom: 0px;
+}
+.ow_console .ow_avatar {
+  float: left;
+  margin-right: -40px;
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+  background-image: none;
+}
+.ow_console .ow_avatar img {
+  height: 40px;
+  width: 40px;
+}
+.ow_console_ntf_txt, .ow_console_invt_txt {
+  display: block;
+  line-height: 16px;
+  color: #666;
+}
+.ow_console_invt_txt a {
+  color: #2A80AE;
+}
+.ow_console_view_all_btn_wrap {
+  padding-top: 4px;
+  background: #FAFAFA;
+}
+.ow_console_view_all_btn {
+  text-decoration: none;
+  display: block;
+  line-height: 11px;
+  padding: 8px 0px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background: url(images/console_item_bg.png) repeat-x;
+}
+ul.ow_console_dropdown {
+  min-width: 110px;
+    text-align: left;
+  overflow-x: auto;
+  cursor: default;
+}
+ul.ow_console_dropdown .ow_console_dropdown_cont {
+  white-space: nowrap;
+  margin-bottom: 1px;
+}
+ul.ow_console_dropdown .ow_console_dropdown_cont a {
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  display: block;
+}
+ul.ow_console_dropdown .ow_console_dropdown_cont a:hover {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+  background: #fff url(images/console_item_bg.png) repeat-x center 0px;
+}
+ul.ow_console_dropdown li:last-child .ow_console_dropdown_cont {
+  margin-bottom: 0px;
+}
+.ow_console .ow_tooltip .ow_tooltip_body {
+  max-width: 330px;
+}
+.ow_console_ntf_cont, .ow_console_invt_cont {
+  display: block;
+  margin: 0px 57px 0px 45px;
+  line-height: 16px;
+  color: #666;
+}
+.ow_console_ntf_txt, .ow_console_invt_txt {
+  min-height: 19px;
+  padding: 0px 0px 3px 0px;
+}
+.ow_console_invt_txt {
+  width: 211px;
+  word-wrap: break-word;
+}
+.ow_console_invt_cont a {
+  color: #2A80AE;
+}
+.ow_console_invt_cont a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+.ow_console_invt_cont .ow_lbutton:hover {
+  text-decoration: none;
+}
+.ow_console_invt_img {
+  float: right;
+  margin-left: -54px;
+  width: 54px;
+  height: 54px;
+  text-align: right;
+}
+.ow_console_invt_img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.ow_console_invt_no_img .ow_console_invt_txt {
+  width: 273px;
+}
+.ow_console_invt_no_img {
+  margin-right: 0px;
+}
+.ow_console_divider {
+  line-height: 1px;
+  height: 1px;
+  background: #dcdcdc;
+  border-bottom: 1px solid #fff;
+  margin: 3px 0px 2px;
+}
+.ow_cursor_pointer {
+  cursor: pointer;
+}
+.ow_cursor_default {
+  cursor: default;
+}
+/* ---- End of Console styles ---- */

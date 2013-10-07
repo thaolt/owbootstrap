@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme>
+    <name>Oxwall Bootstrap</name>
+    <key>owbootstrap</key>
+    <version>1.0</version>
+    <compatibility>1.5 and higher</compatibility>
+    <description>Oxwall theme powered by Twitter Bootstrap</description>
+    <author>Thao Le</author>
+    <authorEmail>thaolt@songphi.com</authorEmail>
+    <authorUrl>http://songphi.net/</authorUrl>
+    <copyright>(C) 2013 SongPhi Ltd. All rights reserved.</copyright>
+    <license>GPLv2</license>
+    <licenseUrl>http://opensource.org/licenses/GPL-2.0</licenseUrl>
+    <sidebarPosition>right</sidebarPosition>
+</theme>

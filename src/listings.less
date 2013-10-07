@@ -1,0 +1,456 @@
+/*========================================================
+        [6] Standard Listings        __listings
+  ========================================================*/
+
+.ow_canvas .ow_avatar img,
+.ow_canvas .ow_lp_avatars img,
+.ow_canvas .ow_newsfeed_avatar img {
+    width: 40px;
+    height: 40px;
+}
+/* ---- Item Picture Content ---- */
+.ow_ipc {
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+.ow_ipc:first-child {
+  margin-top: 0px;
+}
+
+.ow_ipc_picture{
+    float: left;
+    margin-right: -50px;
+    width: 50px;
+  /*padding: 4px 5px 6px;*/
+}
+.ow_ipc_picture .ow_avatar {
+  background: url(images/avatar_bg.png) no-repeat;
+}
+.ow_ipc_picture img {
+  width: 40px;
+  height: 40px;
+}
+.ow_ipc_picture img:first-child {
+  margin-top: 7px;
+  margin-left: 5px;
+}
+.ow_ipc_picture .ow_avatar img {
+  margin-top: 0px;
+  margin-left: 0px; 
+}
+.ow_ipc_info{
+    margin-left: 57px;
+    padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid #ededed;   
+}
+
+.ow_ipc_header{
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px;
+}
+.ow_ipc_header a {
+  font-size: 12px;
+  font-weight: bold;
+}
+.ow_ipc.ow_smallmargin {
+  margin-bottom: 0px;
+}
+.ow_ipc_content{
+    padding: 0px 0px 12px 0px;
+    line-height: 1.25em;
+}
+.ow_ipc_toolbar{
+    font-size: 11px;
+  float: left;
+  padding: 0 0px 0px 0px;
+  width: 100%;
+}
+.ow_ipc_toolbar .ow_icon_control {
+  padding: 0px;
+}
+html body div .ow_ipc_toolbar span {
+  background: none;
+}
+.ow_ipc_toolbar .ow_ipc_date,
+.ow_ipc_date {
+  float: right;
+  font-size: 10px;
+  line-height: 14px;
+}
+.ow_table_1 .ow_ipc_info,
+.ow_table_2 .ow_ipc_info {
+  border: none;
+}
+/* ---- End of the Item Picture Content ---- */
+
+/* ---- Mini Item Picture Content ---- */
+.ow_mini_ipc_picture {
+    float: left;
+    margin-right: -42px;
+    width: 42px;
+}
+.ow_mini_ipc_picture .ow_avatar {
+  background: url(images/avatar_mini_bg.png) no-repeat 0px 0px;
+}
+
+.ow_mini_ipc_picture img,
+.ow_mini_ipc_picture .ow_avatar,
+.ow_mini_ipc_picture .ow_avatar img {
+    width: 32px;
+    height: 32px;
+}
+
+.ow_mini_ipc_info {
+    margin-left: 49px;
+    padding-top: 0;
+}
+
+.ow_mini_ipc_info .mipc_url {
+    font-weight: bold;
+}
+.ow_mini_ipc_content {
+    margin-top: 5px;
+}
+/* ---- End of the Mini Item Picture Content ---- */
+
+/* ---- Item Content ---- */
+.ow_ic_header {
+  margin-bottom: 5px;
+}
+
+.ow_ic_description {
+  margin-bottom: 5px;
+}
+.ow_ic_date {
+  float: right;
+  font-size: 10px;
+  line-height: 14px;  
+}
+th,
+.ow_highbox_table .ow_highbox,
+.ow_page .ow_highbox,
+.ow_sidebar,
+.ow_table_3 td {
+  border-color: #ccc;
+}
+.ow_page td.ow_highbox {
+  border-color: #e8e8e8;
+}
+.ow_box_toolbar {
+  .btn-group;
+  // margin-top: 16px;
+  //   font-size: 11px;
+  // float: right;
+  //   white-space: nowrap;
+}
+.ow_box_toolbar span {
+  // padding: 0px 2px 0px 0px;
+  .btn;
+}
+
+.ow_box_empty .ow_box_toolbar {
+  text-shadow: #fff 1px 1px 0;
+}
+.ow_box_toolbar a {
+  color: #5a5a5a;
+}
+.ow_box_toolbar a:hover {
+  text-decoration: none;
+}
+.ow_box_toolbar .ow_delimiter,
+.ow_ic_toolbar  .ow_delimiter{
+  display: none;
+}
+
+.ow_avatar_list{
+    text-align: center;
+}
+
+.ow_avatar_list a{
+    margin-bottom: 0px;
+    margin-right: 1px;
+}
+
+/* ---- Tooltip ---- */
+.ow_tooltip {
+    margin-top: 0;
+    padding-top: 2px;
+}
+.ow_tooltip_tail {
+    display:inline-block;
+    padding: 0px 0px;
+  width: 100%;
+}
+.ow_tooltip_tail span {
+    display:inline-block;
+  background: url(images/tooltip_tail.png) no-repeat 8px -6px;
+  width: 19px;
+  height: 6px;
+  margin-bottom: -1px;
+}
+.ow_tooltip .ow_tooltip_body {
+    background:#fafafa;
+    padding:4px;
+    border-radius:4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
+  /*max-width: 250px;*/
+}
+/* ---- Top Right Tooltip  ---- */
+.ow_tooltip_top_right.ow_tooltip {
+    margin-top: 0;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+ }
+.ow_tooltip_top_right .ow_tooltip_tail span {
+  background-position: 3px -6px;
+}
+.ow_tooltip_top_right .ow_tooltip_tail {
+  text-align: right;
+}
+/* ---- Bottom Left Tooltip  ---- */
+.ow_tooltip_bottom_left .ow_tooltip_tail span {
+  background-position: 9px 0px;
+  margin-top: -1px;
+}
+/* ---- Bottom Right Tooltip  ---- */
+.ow_tooltip_bottom_right .ow_tooltip_tail span {
+  background-position: 1px 0px;
+  margin-top: -1px;
+}
+.ow_tooltip_bottom_right .ow_tooltip_tail {
+  text-align: right;
+}
+/* ---- Left Side Tooltip  ---- */
+.ow_tooltip_left .ow_tooltip_tail {
+  float: left;
+  margin-right: -4px;
+  width: 4px;
+  padding-top: 8px;
+}
+.ow_tooltip_left .ow_tooltip_tail span {
+  margin: 0px;
+  width: 5px;
+  height: 11px;
+  background-position: 0px -28px;
+}
+.ow_tooltip_left .ow_tooltip_body {
+  display: block;
+  margin-left: 4px;
+}
+/* ---- Right Side Tooltip  ---- */
+.ow_tooltip_right .ow_tooltip_tail {
+  float: right;
+  margin-left: -4px;
+  width: 5px;
+  padding-top: 8px;
+}
+.ow_tooltip_right .ow_tooltip_tail span {
+  margin: 0px;
+  width: 5px;
+  height: 11px;
+  background-position: 0px -15px;
+}
+.ow_tooltip_right .ow_tooltip_body {
+    display:block;
+  margin-right: 4px;
+}
+
+
+/* ---- End of Tooltip  ---- */
+
+/* ---- Counter  ---- */
+.ow_count_wrap {
+    text-align: center;
+    display: inline-block;
+  line-height: 15px;
+  font-size: 10px;
+  vertical-align: top;
+}
+.ow_count_bg {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+  display: inline-block;
+    background: none repeat scroll 0 0 #acacac;
+  min-height: 15px; 
+  overflow: hidden;
+}
+.ow_count {
+    color: #fff;
+    padding: 0 4px 0 4px;
+}
+.ow_count_active {
+    background: none repeat scroll 0 0 #ff7000;
+}
+/* ---- End of Counter  ---- */
+
+/* ---- Item Voted Content ---- */
+
+.ow_ivc_box{
+}
+
+.ow_ivc_voteupdown{
+  background-repeat: no-repeat;
+  background-position: center 5px;
+    float: left;
+    margin-right: -50px;
+    padding: 0px 5px 5px;
+    text-align: center;
+}
+
+.ow_ivc_content{
+    margin-left: 75px;
+}
+/*
+.ow_ivc_origin{
+   background-repeat: no-repeat;
+   margin-bottom: 8px;
+   padding: 2px 0px 2px 20px;
+}
+
+
+.ow_ivc_toolbar .ow_comments,
+.ow_ivc_toolbar .ow_tags,
+.ow_ivc_toolbar .ow_voteup,
+.ow_ivc_toolbar .ow_votedown{
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0px 0px 2px 20px;
+}
+*/
+/* ---- Listing Picture ---- */
+
+.ow_lp_picture{
+    float: left;
+    margin: 0 1px 1px 0;
+}
+
+.ow_lp_wrapper{
+    /*float: left;
+    overflow: hidden;
+    text-align: center;*/
+}
+
+.ow_lp_avatars{
+  text-align:center;
+}
+
+.ow_lp_avatars .ow_lp_wrapper{
+  display: inline-block;
+    margin: 0 1px 1px 0;
+    width: 40px;
+}
+
+.ow_lp_albums .ow_lp_wrapper{
+    width: 77px;
+    height: 77px;
+    padding: 4px 0px 0px 5px;    
+    float: left;
+    margin-right: 4px;
+    background: url(images/lp_wrapper.png) no-repeat 0px 0px;    
+}
+
+.ow_lp_photos .ow_lp_wrapper{
+    width: 77px;
+    height: 77px;
+    padding: 4px 0px 0px 5px;
+    margin: 0 2px 2px 0;
+    display: inline-block;
+    float: none;
+    background: url(images/lp_wrapper.png) no-repeat 0px 0px;
+    text-align: left;
+}
+
+.ow_lp_avatars img {
+    /*display: block;*/
+}
+
+.ow_lp_avatars .ow_avatar {
+    margin: 1px;
+  text-align: left;
+}
+
+.ow_lp_photos img,
+.ow_lp_albums img{
+    width: 72px;
+    height: 72px;
+    /*display: block;*/
+}
+
+.ow_lp_label{
+    margin-left: 80px;
+}
+
+.ow_lp_avatars.ow_mini_avatar{
+    text-align:left;
+}
+.ow_mini_avatar .ow_avatar{
+    background: url(images/avatar_mini_bg.png) no-repeat 0px 0px;
+}
+.ow_mini_avatar .ow_avatar, .ow_avatar.ow_mini_avatar,
+.ow_mini_avatar .ow_avatar img, .ow_avatar.ow_mini_avatar img {
+    width: 32px;
+    height: 32px;
+}
+
+a.avatar_list_more_icon{
+    width: 25px;
+    height: 32px;
+    display: inline-block;
+    margin: 0 1px;
+    background: #eee url(images/more_icon.png) no-repeat 50% 50%;
+}
+
+/* ---- User List ---- */
+
+.ow_user_list {
+}
+
+.ow_user_list .ow_item_set3{
+    width: 32%;
+    word-wrap: break-word;
+}
+
+.ow_user_list_item{
+    float: left;
+    padding: 10px;
+    padding-right: 0px;
+    position: relative;
+}
+
+.ow_user_list_picture{
+    float: left;
+    margin-right: -50px;
+    width: 50px;
+}
+
+.ow_user_list_picture img{
+    width: 40px;
+    height: 40px;
+}
+
+.ow_user_list_data{
+    margin-left: 53px;
+}
+.ow_uli_context_menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.ow_user_list_item:hover .ow_uli_context_menu {
+  display: block;
+}
+.ow_uli_context_menu .ow_tooltip .ow_tooltip_body {
+    padding: 4px 0;
+}
+.ow_uli_context_menu .ow_context_action_list a {
+  padding: 4px 12px;
+}

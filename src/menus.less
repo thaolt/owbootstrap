@@ -1,0 +1,277 @@
+/*========================================================
+        [10] Menus        __menus
+  ========================================================*/
+
+/* ---- Main Menu styles ---- */
+
+.ow_menu_wrap {
+  height: 73px;
+  display: table;
+  background: url('images/menu.jpg') repeat-x;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;  
+    margin: 0px 0px 0px 0px;
+    width: 813px;
+}
+.ow_main_menu{
+  font-family: 'UbuntuBold', "Trebuchet MS", "Helvetica CY", sans-serif;
+    display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px 0px 0px;
+}
+html[xmlns] .ow_main_menu.clearfix {
+  display: table-cell;
+}
+.ow_main_menu li {
+    padding: 0;
+  display: inline-block;
+}
+
+.ow_main_menu li a {
+    color: #666; /** OW_Control type:color, key:menuColor, section:2. Colors, label:Menu text color **/
+    display: inline-block;
+  font-size: 13px;
+    padding: 2px 8px 6px 8px;
+    text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #fff 0 1px 0;
+  font-weight: normal;
+}
+
+.ow_main_menu li.active a {
+}
+
+.ow_main_menu li.active a,
+.ow_main_menu li a:hover {
+  color: #ff7000; 
+}
+.ow_box_menu {
+  font-size: 0px;
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+.ow_box .ow_box_menu {
+  text-align: right;
+}
+
+.ow_box_menu a {
+  background: #fff;
+  display: inline-block;
+  color: #666;
+  font-size:11px;
+  height: 22px;
+  padding: 0px 6px 0 7px;
+  text-shadow: #fff 1px 1px 0;
+  border-style: solid;
+  border-color: #dcdcdc;
+  border-width: 1px 1px 1px 1px;
+  margin: 0px 0px 0px -1px;
+  outline: 0;
+
+}
+.ow_box_menu a:first-child {
+  border-left-width: 1px;
+    border-top-left-radius: 2px;
+    -moz-border-top-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -moz-border-bottom-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+}
+.ow_box_menu a:last-child {
+    border-top-right-radius: 2px;
+    -moz-border-top-right-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -moz-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+}
+.ow_box_empty .ow_box_menu{
+  float: right;
+  padding-left: 5px;
+}
+
+.ow_box_menu a.active,
+.ow_box_menu a:hover{
+  color:#828282; 
+  text-decoration:none;
+  background: transparent url('images/box_menu_active.gif') repeat-x  left top;
+}
+
+/* ---- End of Main Menu styles ---- */
+
+
+/* ---- Content Menu styles ---- */
+
+.ow_content_menu{
+  font-size: 0px;
+  font-family: 'UbuntuBold', "Trebuchet MS", "Helvetica CY", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.ow_content_menu_wrap{
+  margin-bottom:20px;
+}
+
+.ow_content_menu li{
+    float: left;
+  padding-left: 5px;
+  border-left: 1px solid #e8e8e8;
+}
+.ow_content_menu li:first-child {
+  border-color: transparent;
+}
+.ow_content_menu li a{
+    display: block;
+  padding: 3px 3px 4px 0px;
+  font-size: 13px;
+  color: #626060;
+}
+
+.ow_content_menu span{
+    background-image: url(images/ic_file.png);
+    background-position: 5px 9px;
+    background-repeat: no-repeat;
+    padding: 8px 8px 10px 28px;
+    display: block;
+}
+.ow_content_menu li.active {
+    background: url(images/content_menu_bg_left.png) no-repeat;
+}
+.ow_content_menu li.active, .ow_content_menu li.active +li {
+  border-color: transparent;
+}
+.ow_content_menu li.active a {
+    background: url(images/content_menu_bg.png) no-repeat right 0px;
+    color: #9f9f9f; 
+    text-decoration: none;
+}
+
+.ow_content_menu li a:hover {
+    color: #9f9f9f; 
+    text-decoration: none;
+}
+/* ---- End of Content Menu styles ---- */
+
+
+/* ---- Button List styles ---- */
+
+ul.ow_bl{
+    padding: 0;
+}
+
+ul.ow_bl li{
+    float: right;
+  list-style: none;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
+ul.ow_bl a{
+    display: block;
+  background: url(images/btnl_bg.png) repeat-x center left;
+    border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border: 1px solid #ccc;
+  color: #626060;
+  padding: 0px 8px;
+  line-height: 20px;
+  height: 22px;
+    text-decoration: none;
+  font-size: 11px;
+}
+
+ul.ow_bl a:hover {
+    border-color: #e0e0e0;
+}
+
+span.ow_blitem {
+  background: url(images/btnl_bg.png) repeat-x center left;
+    border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border: 1px solid #ccc;
+  color: #626060;
+  padding: 0px 0px;
+  line-height: 20px;
+  height: 22px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 4px 0px 0px;
+}
+span.ow_blitem span {
+    display: inline-block;  
+}
+span.ow_blitem input[type="submit"],
+span.ow_blitem input[type="button"] {
+    border: none;
+    padding: 0px;
+    background: none;
+    font-weight: normal;
+    height: auto;
+    padding: 2px 5px 0 6px;
+    font-size: 11px;
+    line-height: 17px;
+  font-family: "Tahoma","Lucida Grande", "Verdana";   
+    text-transform: none;
+}
+
+span.ow_blitem:hover,
+span.ow_blitem input:hover {
+    border-color: #e0e0e0;
+}
+
+/* ---- Button List styles Cover Image ---- */
+
+.ow_bg_controls span.ow_blitem{
+  background: url(images/btnl_black_bg.png) repeat-x center left;
+  border-radius: 3px;
+  border: none;
+  height: 24px;
+  line-height: 22px;
+} 
+
+.ow_bg_controls span.ow_blitem:hover{
+  background: url(images/btnl_black_hover_bg.png) repeat-x center left;
+}
+
+html body div .ow_bg_controls .ow_green{
+  color:#ccc;
+} 
+
+.ow_bg_controls span.ow_blitem input[type="submit"],
+.ow_bg_controls span.ow_blitem input[type="button"]{
+  color: #ccc;
+} 
+
+.ow_bg_controls span.ow_blitem input[type="submit"]:hover,
+.ow_bg_controls span.ow_blitem input[type="button"]:hover{
+  color: #eee;
+}
+
+/* ---- End of Button List styles Cover Image ---- */
+
+/* ---- End of Button List styles ---- */
+
+
+/* ---- Footer Menu styles ---- */
+
+.ow_footer_menu{
+    font-size: 11px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ---- End of Footer Menu styles ---- */
+
+
+/* ---- Inventory Line styles ---- */
+
+.ow_inventory_line{
+}

@@ -1,0 +1,323 @@
+/*========================================================
+        [4] Forms        __forms
+  ========================================================*/
+
+/* ---- Form Elements styles ---- */
+
+input[type=text],
+input[type=password],
+textarea,
+select,
+div.jhtmlarea{
+    background-image: url(images/inputbg.gif);
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
+    border: 1px solid #ccc;
+    color: #585858;
+    font-family: "Lucida Grande", "Verdana";
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+body form div.jhtmlarea {
+  padding: 0px;
+  background: #fff;
+  width: 100% !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .jhtmlarea .toolbar {
+  padding: 2px 2px 0px;
+  height: 24px;
+  background: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+    border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+}
+body .jhtmlarea .toolbar ul {
+  height: 24px;
+}
+
+.jhtmlarea .input_ws_cont {
+  padding: 8px;
+}
+
+body.htmlarea_styles {
+  margin: 0px;
+}
+
+html body .ow_sidebar *,
+html body .ow_console *{
+  font-size: 11px;
+}
+
+select{
+    background-image: none;
+}
+
+textarea{
+    height: 100px;
+    width: 100%;
+    resize: vertical;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;    
+}
+
+input[type=text],
+input[type=password]{
+    width: 100%;
+    height: 30px;
+    line-height: 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;    
+}
+
+/*.ow_supernarrow input[type=text],
+.ow_supernarrow input[type=password]{
+    width: 95%;
+}*/
+input[type=submit],
+input[type=button]{
+  .btn;
+  background-color: transparent;
+    background-position: right 50%;
+  background-repeat: no-repeat;
+    background-image: url(images/ic_right_arrow.png);
+    padding: 1px 31px 2px 0px;
+    color: #626060;
+    font-weight: normal;
+    cursor: pointer;
+    height: 30px;
+  font-family: 'UbuntuBold', "Trebuchet MS", "Helvetica CY", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: none;
+}
+/* temp hack for decorating buttons in FF */
+body:not(:-moz-handler-blocked) input[type=submit],
+body:not(:-moz-handler-blocked) input[type=button]{
+    padding-top: 0px;
+    padding-right: 31px;
+}
+/* End of temp hack for decorating buttons in FF */
+
+html body div span.ow_button input[type=submit],
+html body div span.ow_button input[type=button]{
+}
+
+html body.ow input[type=submit],
+html body.ow input[type=button]{
+    margin: 0px;
+}
+span.ow_button {
+  .btn;
+  // display: inline-block;
+  // background-color: #fff;
+  // background-repeat: no-repeat;
+  // background-image: url(images/btn_grad.png);
+  // background-position: right top;
+  // padding: 0px 8px;
+  // border: 1px solid #ccc;
+  //   border-radius: 4px;
+  //   -moz-border-radius: 4px;
+  //   -webkit-border-radius: 4px;
+}
+span.ow_button:hover {
+  
+}
+
+span.ow_button span.ow_button {
+  
+}
+span.ow_button span {
+  
+}
+.ow_btn_delimiter span.ow_button:first-child {
+  margin-right: 16px;
+}
+.ow_btn_delimiter span.ow_button span.ow_button {
+  margin: 0px;
+}
+html body.ow span.ow_button {
+}
+body.ow input.ow_inprogress,
+body.ow .ow_inprogress {
+    background-image: url(images/ajax_preloader_button.gif);
+}
+
+*+html input[type=submit],
+*+html input[type=button]{
+    overflow: visible;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover{
+    /* empty */
+}
+
+input[type=submit].submit{
+    background-color: #00aa00;
+    color: #fff;
+}
+
+input[type=submit].alert{
+    background-color: #ff6666;
+    color: #fff;
+}
+
+input[type=submit].submit:hover{
+    /* empty */
+}
+
+input[type=submit].alert:hover{
+    /* empty */
+}
+
+
+ul.ow_radio_group li{
+  float:left;
+}
+
+ul.ow_checkbox_group li{
+  float:left;
+}
+
+textarea.invitation,
+input[type=text].invitation,
+input[type=password].invitation{
+  color:#999;
+}
+
+.form_auto_click textarea.invitation{
+  height:50px;
+}
+
+form .error{
+    color:red;
+}
+
+form input[type=text].hasDatepicker{
+    width: 87%;
+}
+
+form br.ow_no_height{
+    line-height: 0;
+}
+
+.color_input input[type=text]{
+    width:70%;
+}
+
+.ow_multiselect select{
+    width: 120px;
+    padding: 2px;
+}
+
+.ow_multiselect input[type=button]{
+    padding-left: 20px;
+}
+
+
+.form_auto_click .ow_submit_auto_click{
+    display:none;
+}
+
+/* ---- Positive and Negative buttons ---- */
+
+html body div .ow_positive input[type=submit],
+html body div .ow_positive input[type=button]{
+  color: #ff7000;
+}
+.ow_negative input[type=submit],
+.ow_negative input[type=button]{
+  background: url(images/btn_grad_negative.png) repeat-x;
+  padding-right: 2px;
+}
+body:not(:-moz-handler-blocked) .ow_negative input[type=submit],
+body:not(:-moz-handler-blocked) .ow_negative input[type=button] {
+  padding-right: 2px;
+}
+
+/* ---- End of Positive and Negative buttons ---- */
+
+html body div .ow_green {
+    color: #089634;
+}
+
+html body div .ow_red{
+    color: #ee3d32;
+}
+
+html body div .ow_mild_red,
+.ow_navbox.ow_mild_red a.move{
+    color: #f42217;
+}
+
+html body div .ow_mild_green,
+.ow_navbox.ow_mild_green a.move{
+  color: #7cbb11;
+}
+
+html body .ow_button.ow_red,
+html body .ow_button.ow_mild_red,
+html body .ow_button.ow_green,
+html body .ow_button.ow_mild_green,
+.ow_button .ow_mild_red,
+.ow_button .ow_red,
+.ow_button .ow_green,
+.ow_button .ow_mild_green {
+  background-color: transparent;
+  border-color: transparent;
+  color: #626060;
+}
+
+input[type=submit].ow_green,
+input[type=button].ow_green,
+input[type=submit].ow_mild_green,
+input[type=button].ow_mild_green,
+input[type=submit].ow_red,
+input[type=button].ow_red,
+input[type=submit].ow_mild_red,
+input[type=button].ow_mild_red  {
+  background-color: transparent;
+}
+
+/* wysiwyg styles */
+
+body.htmlarea_styles{
+    font-family: "Lucida Grande", "Verdana", "Tahoma"; /** key:commonFontFamily  **/
+    color: #333;
+    font-size: 13px; /** key:commonFontSize **/
+    line-height: 18px;
+
+}
+
+body.htmlarea_styles a{
+
+}
+
+body.htmlarea_styles p{
+    margin:0;
+}
+
+
+/* wysiwyg styles end */
+
+/* tag styles */
+div.tagsinput { 
+  background-image: url(images/inputbg.gif);
+  background-color: #fff; 
+}
+/* tag styles end */
+
+/* ---- End of Form Elements styles ---- */
+
+
+/* ---- Form Table styles ---- */
+/* ---- End of Form Table styles ---- */
